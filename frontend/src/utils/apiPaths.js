@@ -1,4 +1,4 @@
-export const BASE_URL = "http://localhost:7000";
+export const BASE_URL = "https://taskers-server.vercel.app";
 
 export const API_PATHS = {
     AUTH: {
