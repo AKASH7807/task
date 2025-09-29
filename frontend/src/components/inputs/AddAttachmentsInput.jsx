@@ -26,13 +26,15 @@ const AddAttachmentsInput = ({ attachments, setAttachments }) => {
                     key={item}
                     className="flex justify-between items-center bg-gray-50 border border-gray-200 px-3 py-2 rounded-md mb-2"
                 >
-                    <div className="flex items-center gap-2">
-                        <LuPaperclip className="text-gray-400" />
-                        <p className="text-[12px] text-gray-800">{item}</p>
+                    <div className="flex items-center gap-2 min-w-0">
+                        <LuPaperclip className="text-gray-400 flex-shrink-0" />
+                        <p className="text-[12px] text-gray-800 truncate max-w-[200px] sm:max-w-[300px]">
+                            {item}
+                        </p>
                     </div>
                     <button
                         type="button"
-                        className="hover:text-red-600"
+                        className="hover:text-red-600 flex-shrink-0"
                         onClick={() => handleDeleteOption(index)}
                     >
                         <HiOutlineTrash className="text-base text-red-500" />
